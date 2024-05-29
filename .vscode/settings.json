@@ -1,0 +1,6 @@
+{
+    "deno.enable": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Cascadia Code"
+}
