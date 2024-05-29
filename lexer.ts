@@ -6,6 +6,7 @@ export enum TokenType {
     CloseParen,
     BinaryOperator,
     Let,
+    EOF,
 }
 
 const KEYWORDS: Record<string, TokenType> = {
@@ -81,9 +82,11 @@ export function tokenize (sourceCode: string): Token[] {
         }
     }
 
+
+    tokens.push({type: TokenType.EOF, value: "EndOfFile"});
     return tokens;
 }
 const source = await Deno.readTextFile('./test.txt')
 for (const token of tokenize(source)) {
-    console.log(token);
+  console.log(token);
 }
