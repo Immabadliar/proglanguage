@@ -1,5 +1,5 @@
 import { Stmt, Porogram, Expr, BinaryExpr, NumericLiteral, Identifier } from "./ast.ts";
-import { tokenize, Token, TokenType } from "./lexer.ts";\
+import { tokenize, Token, TokenType } from "./lexer.ts";
 
 export default class Parser {
 
